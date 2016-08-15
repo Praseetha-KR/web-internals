@@ -439,7 +439,7 @@ Vary: Accept-Encoding
 More info at [httpstatuses.com](https://httpstatuses.com/)
 
 
-##References:
+##More info:
 
 - Specs:
   - HTTP/1.0 [RFC 1945](https://tools.ietf.org/html/rfc1945)
