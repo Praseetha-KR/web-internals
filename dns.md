@@ -31,8 +31,13 @@ When we enter a URL in address bar, browser takes the domain name and do a DNS l
 
 ![alt text](/img/dns_lookup.jpg "DNS Lookup flow")
 
+Here is an example of DNS query viewed in [wireshark](https://www.wireshark.org/):
+
+![alt text](/img/dns_wireshark.jpg "Wireshark screenshot of DNS query")
 
 ##DNS Message Format
+
+DNS primarily uses UDP on port number 53 to serve requests.DNS queries consist of a single UDP request from the client followed by a single UDP reply from the server. TCP is used when the response data size exceeds 512 bytes.
 
 ![alt text](http://www.inacon.de/ph/data/images/F_126_OSOS_DNS-Message-Format_002.jpg "DNS Message Fromat")
 
