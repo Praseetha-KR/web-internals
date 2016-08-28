@@ -43,6 +43,11 @@ DNS primarily uses UDP on port number 53 to serve requests.DNS queries consist o
 
 *source: [www.inacon.de](http://www.inacon.de/ph/data/DNS/DNS-Message-Format_OS_RFC-1035.htm)*
 
+Here is DNS request & response samples:
+
+![alt text](/img/dns_req_sample.jpg "DNS Request screenshot")
+![alt text](/img/dns_res_sample.jpg "DNS Response screenshot")
+
 ##DNS Utilities
 
 Usually, while creating TCP sockets, HTTP applications do system call with `getaddrinfo(host)` (which in turn call lower level functions such as `gethostbyname`). This will do DNS resolution and return IP addresses.
