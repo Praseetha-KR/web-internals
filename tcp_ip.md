@@ -13,7 +13,10 @@ Sockets can be thought of as an application's interface to the network. Typical 
   - [Linux socket implementation](https://github.com/torvalds/linux/blob/master/net/socket.c)
   - [Chromium socket implementation files](https://github.com/nwjs/chromium.src/tree/a464d98d0f0ccef34bc0ce30be38a3c497c86c1a/net/socket)
 
-## Transport
+## Transmission Control Protocol
+
+[RFC 793](https://www.ietf.org/rfc/rfc793.txt)
+
 TCP ensures end-to-end reliable delivery.
 
 #### TCP header format
@@ -32,7 +35,9 @@ Here is more info: [Know your TCP system call sequences](http://www.ibm.com/deve
 -------------------------------------------
 
 ## IP
+
+[RFC 791](https://tools.ietf.org/html/rfc791)
+
 The internet protocol provides for transmitting blocks of data called datagrams from sources to destinations, where sources and destinations are hosts identified by fixed length addresses.
 It also provides fragmentation and reassembly for long packets.
 <img src="./img/ip_packet.jpg" alt="IP Packet" width="80%" />
-
