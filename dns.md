@@ -1,10 +1,10 @@
-#DNS
+# DNS
 
 DNS (Domain Name System) is a hierarchical decentralized naming system for computers, services, or any resource connected to the Internet or a private network. DNS servers store DNS records.
 
 Spec: [RFC 1035](https://www.ietf.org/rfc/rfc1035.txt)
 
-##Types of DNS Records
+## Types of DNS Records
 
 DNS tables consists of various types of records:
 
@@ -21,7 +21,7 @@ DNS tables consists of various types of records:
 | **TXT**   | Text                                    |
 
 
-##DNS Lookup 
+## DNS Lookup 
 
 When we enter a URL in address bar, browser takes the domain name and do a DNS lookup to get the corresponding IP address. DNS Lookup flow is like this:
   1. **Browser cache**: Check out `chrome://net-internals/#dns` for Google Chrome.
@@ -29,13 +29,13 @@ When we enter a URL in address bar, browser takes the domain name and do a DNS l
   3. **Router Cache** --> **ISP DNS server** or **Custom DNS Server List**
   4. Recursive check in **DNS servers** up till **Root DNS Server**
 
-![alt text](/img/dns_lookup.jpg "DNS Lookup flow")
+![alt text](./img/dns_lookup.jpg "DNS Lookup flow")
 
 Here is an example of DNS query viewed in [wireshark](https://www.wireshark.org/):
 
-![alt text](/img/dns_wireshark.jpg "Wireshark screenshot of DNS query")
+![alt text](./img/dns_wireshark.jpg "Wireshark screenshot of DNS query")
 
-##DNS Message Format
+## DNS Message Format
 
 DNS primarily uses UDP on port number 53 to serve requests.DNS queries consist of a single UDP request from the client followed by a single UDP reply from the server. TCP is used when the response data size exceeds 512 bytes.
 
@@ -43,15 +43,15 @@ DNS primarily uses UDP on port number 53 to serve requests.DNS queries consist o
 
 *source: [www.inacon.de](http://www.inacon.de/ph/data/DNS/DNS-Message-Format_OS_RFC-1035.htm)*
 
-####DNS request sample:
+#### DNS request sample:
 
-![alt text](/img/dns_req_sample.png "DNS Request screenshot")
+![alt text](./img/dns_req_sample.png "DNS Request screenshot")
 
-####DNS response sample:
+#### DNS response sample:
 
-![alt text](/img/dns_res_sample.png "DNS Response screenshot")
+![alt text](./img/dns_res_sample.png "DNS Response screenshot")
 
-##DNS Utilities
+## DNS Utilities
 
 Usually, while creating TCP sockets, HTTP applications do system call with `getaddrinfo(host)` (which in turn call lower level functions such as `gethostbyname`). This will do DNS resolution and return IP addresses.
 

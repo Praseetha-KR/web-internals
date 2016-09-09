@@ -1,11 +1,11 @@
-#HTTP
+# HTTP
 
 HTTP (Hyper Text Transfer Protocol) is an Application Layer Protocol to exchange or transfer hypertext.
 
 Spec: [RFC 2616](https://tools.ietf.org/html/rfc2616)
 
 
-##URL Format:
+## URL Format:
 
 ```
 http_URL = "http:" "//" host [ ":" port ] [ abs_path [ "?" query ]]
@@ -16,7 +16,7 @@ Example:
 http://imagineer.in/hello
 ```
 
-##Request Format
+## Request Format
 
 HTTP request in BNF
 
@@ -97,7 +97,7 @@ Host: imagineer.in
 User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36
 ```
 
-##Response Format
+## Response Format
 
 HTTP response in BNF:
 
@@ -159,12 +159,12 @@ Vary: Accept-Encoding
 
 
 
-###HTTP Headers
+### HTTP Headers
 
 [List of http header fields](https://en.wikipedia.org/wiki/List_of_HTTP_header_fields)
 
 
-###Status Codes
+### Status Codes
 
 <table>
     <thead>
@@ -439,7 +439,7 @@ Vary: Accept-Encoding
 More info at [httpstatuses.com](https://httpstatuses.com/)
 
 
-##More info:
+## More info:
 
 - Specs:
   - HTTP/1.0 [RFC 1945](https://tools.ietf.org/html/rfc1945)

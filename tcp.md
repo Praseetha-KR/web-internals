@@ -1,4 +1,4 @@
-#TCP
+# TCP
 
 ## Sockets
 IP address identifies which host & Port number identifies which appication for a connection. 
@@ -8,7 +8,7 @@ The client-server socket pair `<client IP address, client port number, server IP
 
 Sockets can be thought of as an application's interface to the network. Typical library implementations present a Socket class, an instance of which is used to create and manage a connection. Network appications (such as browsers) can directly make use of these socket functions to send & recv data.
 
-<img src="/img/sockets_flow_diagram.jpg" alt="Socket flow diagram" width="80%" /> 
+<img src="./img/sockets_flow_diagram.jpg" alt="Socket flow diagram" width="80%" /> 
 
   - [Linux socket implementation](https://github.com/torvalds/linux/blob/master/net/socket.c)
   - [Chromium socket implementation files](https://github.com/nwjs/chromium.src/tree/a464d98d0f0ccef34bc0ce30be38a3c497c86c1a/net/socket)
